@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
@@ -16,16 +18,72 @@
 </head>
 <body>
 
-  You’ve used 815 GB of your storage
+  <div class="main-container">
 
-  185 GB Left
+    <div class="appcontainer">
+
+      <section class="top">
   
-  0 GB
-  1000 GB
+        <img src="images/logo.svg" alt="logo" class="logo" />
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+        <div class="icons">
+  
+          <div class="iconContainer">
+            <img
+                src="images/icon-document.svg"
+                alt="document"
+                class="icon"
+            />
+        </div>
+  
+        <div class="iconContainer">
+          <img
+              src="images/icon-folder.svg"
+              alt="document"
+              class="icon"
+          />
+      </div>
+  
+      <div class="iconContainer">
+        <img
+            src="images/icon-upload.svg"
+            alt="document"
+            class="icon"
+        />
+    </div>
+  
+        </div>
+  
+  
+      </section>
+  
+      <section class="bottom">
+        <p class="message">
+            You’ve used <span>815 GB</span> of your storage
+        </p>
+        <div class="memoryBar">
+            <div class="currentAmount">
+                <div class="nodule"></div>
+            </div>
+        </div>
+        <div class="limits">
+            <p class="lowerLimit">0 <span>GB</span></p>
+            <p class="upperLimit">1000 <span>GB</span></p>
+        </div>
+        <p class="memoryMessage"><span>185</span> GB Left</p>
+    </section>
+  
+    </div>
+  
+  
+  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Mike</a>.
+    </div>
+
+
   </div>
+
 </body>
 </html>
